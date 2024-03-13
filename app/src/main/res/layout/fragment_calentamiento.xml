@@ -57,4 +57,103 @@
         android:layout_gravity="center|bottom"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textHoras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="340dp"
+        android:layout_marginLeft="110dp"
+        android:textSize="32dp"
+        android:text="00" />
+
+    <TextView
+        android:id="@+id/textSeparador1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="338dp"
+        android:layout_marginLeft="160dp"
+        android:textSize="32dp"
+        android:text=":" />
+
+    <TextView
+        android:id="@+id/textMinutos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="340dp"
+        android:layout_marginLeft="180dp"
+        android:textSize="32dp"
+        android:text="00" />
+
+    <TextView
+        android:id="@+id/textSeparador2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="338dp"
+        android:layout_marginLeft="230dp"
+        android:textSize="32dp"
+        android:text=":" />
+
+    <TextView
+        android:id="@+id/textSegundos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="340dp"
+        android:layout_marginLeft="250dp"
+        android:textSize="32dp"
+        android:text="00" />
+
+    <TextView
+        android:id="@+id/textHoraFin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="410dp"
+        android:layout_marginLeft="170dp"
+        android:textSize="16dp"
+        android:text="Hora fin" />
+
+    <TextView
+        android:id="@+id/textHorasFin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="445dp"
+        android:layout_marginLeft="140dp"
+        android:textSize="18dp"
+        android:text="00" />
+
+    <TextView
+        android:id="@+id/textSeparador3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="443dp"
+        android:layout_marginLeft="170dp"
+        android:textSize="18dp"
+        android:text=":" />
+
+    <TextView
+        android:id="@+id/textMinutosFin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="445dp"
+        android:layout_marginLeft="185dp"
+        android:textSize="18dp"
+        android:text="00" />
+
+    <TextView
+        android:id="@+id/textSeparador4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="443dp"
+        android:layout_marginLeft="215dp"
+        android:textSize="18dp"
+        android:text=":" />
+
+    <TextView
+        android:id="@+id/textSegundosFin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="445dp"
+        android:layout_marginLeft="231dp"
+        android:textSize="18dp"
+        android:text="00" />
 </FrameLayout>
