@@ -1,7 +1,5 @@
 package com.example.friendlygym
 import android.os.Bundle
-import android.view.Menu
-import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -22,7 +20,6 @@ private lateinit var binding: ActivityMainBinding
 
      binding = ActivityMainBinding.inflate(layoutInflater)
      setContentView(binding.root)
-
         setSupportActionBar(binding.appBarMain.toolbar)
 
         val drawerLayout: DrawerLayout = binding.drawerLayout
@@ -33,12 +30,6 @@ private lateinit var binding: ActivityMainBinding
         appBarConfiguration = AppBarConfiguration(setOf(R.id.nav_rutina, R.id.nav_calentamiento), drawerLayout)
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
-    }
-
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        menuInflater.inflate(R.menu.main, menu)
-        return true
     }
 
     override fun onSupportNavigateUp(): Boolean {
