@@ -13,4 +13,6 @@
 
     <string name="nav_calentamiento">Calentamiento</string>
     <string name="nav_rutina">Rutina</string>
+
+    <string name="add_routine">Agregar</string>
 </resources>
