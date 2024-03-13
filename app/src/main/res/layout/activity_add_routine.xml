@@ -1,26 +1,81 @@
-<!-- Layout for the add routine activity -->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:padding="16dp"> <!-- Added padding for the ConstraintLayout -->
 
-    <EditText
-        android:id="@+id/edit_text_routine_name"
-        android:layout_width="match_parent"
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/dialogTitle"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="@string/routine_name" />
+        android:text="Agregar rutina"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/closeButton" />
 
-    <Button
-        android:id="@+id/button_save"
-        android:layout_width="match_parent"
+    <!-- Close ImageButton -->
+    <ImageButton
+        android:id="@+id/closeButton"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/save" />
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_close"
+        android:contentDescription="@string/close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
-    <Button
-        android:id="@+id/button_cancel"
-        android:layout_width="match_parent"
+    <!-- TextInputLayout for the routine name -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_edit_text_routine_name"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/cancel" />
+        app:boxBackgroundColor="@color/blue_50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dialogTitle"
+        android:layout_marginTop="24dp">
 
-</LinearLayout>
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_routine_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/routine_name"
+            android:background="@null"
+            android:padding="10dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Buttons in a LinearLayout -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="8dp"> =
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_save"
+            style="@style/OrangeButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            app:cornerRadius="16dp"
+            android:layout_marginEnd="8dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_cancel"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            app:strokeColor="@color/orange_700"
+            app:strokeWidth="1.5dp"
+            app:cornerRadius="16dp"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
