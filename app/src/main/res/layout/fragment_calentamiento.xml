@@ -6,10 +6,30 @@
     android:layout_height="match_parent"
     tools:context=".ui.calentamiento.CalentamientoFragment">
 
-    <ImageView
+    <androidx.cardview.widget.CardView
         android:layout_width="320dp"
-        android:layout_height="320dp"
-        android:layout_gravity="center|center_vertical"
+        android:layout_height="94dp"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center|top"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <TextView
+            android:id="@+id/textTituloCalentamientoTrotar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calentamiento\ntrotar"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:layout_gravity="center"/>
+
+    </androidx.cardview.widget.CardView>
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="290dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="190dp"
         android:src="@drawable/cronometro_calentamiento"
         tools:visibility="visible" />
 
@@ -18,9 +38,10 @@
         style="@style/CustomButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="180dp"
         android:layout_marginEnd="16dp"
         android:text="Editar"
+        android:layout_gravity="end"
         android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -30,11 +51,10 @@
         style="@style/CustomButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="600dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="115dp"
         android:text="Iniciar"
         android:textAllCaps="false"
+        android:layout_gravity="center|bottom"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 </FrameLayout>
