@@ -30,7 +30,7 @@ private lateinit var binding: ActivityMainBinding
         val navController = findNavController(R.id.nav_host_fragment_content_main)
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
-        appBarConfiguration = AppBarConfiguration(setOf(R.id.nav_rutina), drawerLayout)
+        appBarConfiguration = AppBarConfiguration(setOf(R.id.nav_rutina, R.id.nav_calentamiento), drawerLayout)
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
     }
