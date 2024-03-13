@@ -12,10 +12,10 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.friendlygym.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_calentamiento"
+        android:name="com.example.friendlygym.ui.calentamiento.CalentamientoFragment"
+        android:label="@string/menu_calentamiento"
+        tools:layout="@layout/fragment_calentamiento" />
 
     <fragment
         android:id="@+id/nav_slideshow"

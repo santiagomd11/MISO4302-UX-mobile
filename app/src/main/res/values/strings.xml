@@ -13,4 +13,6 @@
 
     <string name="nav_calentamiento">Calentamiento</string>
     <string name="nav_rutina">Rutina</string>
+    <string name="titulo_calentamiento">Calentamiento trotar</string>
+    <string name="menu_calentamiento" />
 </resources>
