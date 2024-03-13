@@ -4,10 +4,10 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.example.friendlygym.R
 import com.example.friendlygym.models.Routine
 import com.example.friendlygym.ui.adapters.RoutinesAdapter
@@ -24,7 +24,7 @@ class RoutinesFragment : Fragment() {
         recyclerView.layoutManager = LinearLayoutManager(context)
         recyclerView.adapter = RoutinesAdapter(routineList)
 
-        view.findViewById<FloatingActionButton>(R.id.fab_add_routine).setOnClickListener {
+        view.findViewById<Button>(R.id.buttonAddRoutine).setOnClickListener {
             startActivityForResult(Intent(activity, AddRoutineActivity::class.java), REQUEST_ADD_ROUTINE)
         }
 

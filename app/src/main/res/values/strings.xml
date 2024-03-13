@@ -11,8 +11,11 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
 
-    <string name="nav_calentamiento">Calentamiento</string>
-    <string name="nav_rutina">Rutina</string>
+    <string name="nav_calentamiento_string">Calentamiento</string>
+    <string name="nav_rutina_string">Rutina</string>
 
     <string name="add_routine">Agregar</string>
+    <string name="save">Guardar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="routine_name">Pecho</string>
 </resources>
