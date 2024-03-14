@@ -30,7 +30,7 @@
     <!-- TextInputLayout for the routine name -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/layout_edit_text_routine_name"
-        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:boxBackgroundColor="@color/blue_50"
@@ -44,8 +44,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/routine_name"
-            android:background="@null"
-            android:padding="10dp" />
+            android:background="@null"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <!-- Buttons in a LinearLayout -->
