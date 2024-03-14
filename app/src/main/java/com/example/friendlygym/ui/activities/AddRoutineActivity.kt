@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 import com.example.friendlygym.R
 
@@ -16,18 +17,19 @@ class AddRoutineActivity : AppCompatActivity() {
         val editTextRoutineName: EditText = findViewById(R.id.edit_text_routine_name)
         val buttonSave: Button = findViewById(R.id.button_save)
         val buttonCancel: Button = findViewById(R.id.button_cancel)
+        val closeButton: ImageButton = findViewById(R.id.closeButton)
 
         buttonSave.setOnClickListener {
-            val routineName = editTextRoutineName.text.toString()
-            if (routineName.isNotEmpty()) {
-                val intent = Intent()
-                intent.putExtra(EXTRA_ROUTINE_NAME, routineName)
-                setResult(Activity.RESULT_OK, intent)
-                finish()
-            }
+            setResult(Activity.RESULT_CANCELED)
+            finish()
         }
 
         buttonCancel.setOnClickListener {
+            setResult(Activity.RESULT_CANCELED)
+            finish()
+        }
+
+        closeButton.setOnClickListener {
             setResult(Activity.RESULT_CANCELED)
             finish()
         }
