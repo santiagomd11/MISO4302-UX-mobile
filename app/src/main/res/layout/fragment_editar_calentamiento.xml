@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.editar_calentamiento.EditarCalentamientoFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="320dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center|top"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <TextView
+            android:id="@+id/textTituloCalentamientoTrotar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Editando alarma\nde calentamiento"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:layout_gravity="center"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/horas_editar_calentamiento"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="26dp"
+        app:boxBackgroundColor="@color/blue_50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dialogTitle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_horas_editar_calentamiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="Horas (*):"
+            android:inputType="number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/minutos_editar_calentamiento"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="290dp"
+        android:layout_marginLeft="26dp"
+        app:boxBackgroundColor="@color/blue_50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dialogTitle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_minutos_editar_calentamiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="Minutos (*):"
+            android:inputType="number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/segundos_editar_calentamiento"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="380dp"
+        android:layout_marginLeft="26dp"
+        app:boxBackgroundColor="@color/blue_50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dialogTitle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_segundos_editar_calentamiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="Segundos (*):"
+            android:inputType="number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonGuardarCalentamiento"
+        style="@style/OrangeButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="195dp"
+        android:text="Guardar"
+        android:textAllCaps="false"
+        android:layout_gravity="center|bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</FrameLayout>

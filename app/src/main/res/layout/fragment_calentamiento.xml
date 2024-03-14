@@ -47,7 +47,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/buttonIniciar"
+        android:id="@+id/buttonIniciarCalentamiento"
         style="@style/OrangeButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
