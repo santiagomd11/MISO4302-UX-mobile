@@ -7,10 +7,10 @@
         <item
             android:id="@+id/nav_calentamiento"
             android:icon="@drawable/ic_calentamiento"
-            android:title="@string/nav_calentamiento" />
+            android:title="@string/nav_calentamiento_string" />
         <item
             android:id="@+id/nav_rutina"
             android:icon="@drawable/ic_rutina"
-            android:title="@string/nav_rutina" />
+            android:title="@string/nav_rutina_string" />
     </group>
 </menu>

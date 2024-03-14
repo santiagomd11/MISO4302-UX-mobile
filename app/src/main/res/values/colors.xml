@@ -5,43 +5,55 @@
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
+
+    <!-- Black color palette -->
+    <color name="black_50">#e6e6e6</color>
+    <color name="black_100">#b0b0b0</color>
+    <color name="black_200">#8a8a8a</color>
+    <color name="black_300">#545454</color>
+    <color name="black_400">#333333</color>
     <color name="black">#FF000000</color>
+
+    <!-- White color palette -->
+    <color name="white_600">#e8e8e8</color>
+    <color name="white_700">#b5b5b5</color>
+    <color name="white_800">#8c8c8c</color>
+    <color name="white_900">#6b6b6b</color>
     <color name="white">#FFFFFFFF</color>
 
-
     <!-- Green color palette -->
-    <color name="green_50">#E8F5E9</color>
-    <color name="green_100">#C8E6C9</color>
-    <color name="green_200">#A5D6A7</color>
-    <color name="green_300">#81C784</color>
-    <color name="green_400">#66BB6A</color>
-    <color name="green_500">#4CAF50</color>
-    <color name="green_600">#43A047</color>
-    <color name="green_700">#388E3C</color>
-    <color name="green_800">#2E7D32</color>
-    <color name="green_900">#1B5E20</color>
+    <color name="green_50">#e6f5ea</color>
+    <color name="green_100">#b0dfbe</color>
+    <color name="green_200">#8ad09f</color>
+    <color name="green_300">#54bb73</color>
+    <color name="green_400">#33ad58</color>
+    <color name="green_500">#00992e</color>
+    <color name="green_600">#008b2a</color>
+    <color name="green_700">#006d21</color>
+    <color name="green_800">#005419</color>
+    <color name="green_900">#004013</color>
 
     <!-- Orange color palette -->
-    <color name="orange_50">#FFF3E0</color>
-    <color name="orange_100">#FFE0B2</color>
-    <color name="orange_200">#FFCC80</color>
-    <color name="orange_300">#FFB74D</color>
-    <color name="orange_400">#FFA726</color>
-    <color name="orange_500">#FF9800</color>
-    <color name="orange_600">#FB8C00</color>
-    <color name="orange_700">#F57C00</color>
-    <color name="orange_800">#EF6C00</color>
-    <color name="orange_900">#E65100</color>
+    <color name="orange_50">#fff3e6</color>
+    <color name="orange_100">#ffdab0</color>
+    <color name="orange_200">#ffc88a</color>
+    <color name="orange_300">#ffaf54</color>
+    <color name="orange_400">#ffa033</color>
+    <color name="orange_500">#ff8800</color>
+    <color name="orange_600">#e87c00</color>
+    <color name="orange_700">#b56100</color>
+    <color name="orange_800">#8c4b00</color>
+    <color name="orange_900">#6b3900</color>
 
     <!-- Blue color palette -->
-    <color name="blue_50">#E3F2FD</color>
-    <color name="blue_100">#BBDEFB</color>
-    <color name="blue_200">#90CAF9</color>
-    <color name="blue_300">#64B5F6</color>
-    <color name="blue_400">#42A5F5</color>
-    <color name="blue_500">#2196F3</color>
-    <color name="blue_600">#1E88E5</color>
-    <color name="blue_700">#1976D2</color>
-    <color name="blue_800">#1565C0</color>
-    <color name="blue_900">#0D47A1</color>
+    <color name="blue_50">#e6f3fe</color>
+    <color name="blue_100">#b0dafa</color>
+    <color name="blue_200">#8ac8f8</color>
+    <color name="blue_300">#54aff5</color>
+    <color name="blue_400">#33a0f3</color>
+    <color name="blue_500">#0088f0</color>
+    <color name="blue_600">#007cda</color>
+    <color name="blue_700">#0061aa</color>
+    <color name="blue_800">#004b84</color>
+    <color name="blue_900">#003965</color>
 </resources>
